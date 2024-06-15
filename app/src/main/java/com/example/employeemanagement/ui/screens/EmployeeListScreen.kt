@@ -63,8 +63,8 @@ fun EmployeeItem(employee: Employee, onClick: () -> Unit) {
             modifier = Modifier.padding(16.dp)
         ) {
             //column view showing first, last name and designation of employee
-            Text(text = "${employee.firstName} ${employee.lastName}", style = MaterialTheme.typography.titleLarge, color = Color.White)
-            Text(text = employee.designation, style = MaterialTheme.typography.bodyLarge, color = Color.LightGray)
+            Text(text = "${employee.firstName} ${employee.lastName}", style = MaterialTheme.typography.titleLarge, color = Color.Black)
+            Text(text = employee.designation, style = MaterialTheme.typography.bodyLarge, color = Color.DarkGray)
         }
     }
 }

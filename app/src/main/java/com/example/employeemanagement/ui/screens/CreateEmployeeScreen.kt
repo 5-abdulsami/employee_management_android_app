@@ -44,9 +44,12 @@ fun CreateEmployeeScreen(navController: NavController, viewModel: EmployeeViewMo
 
     Scaffold(
         topBar = {
+
             TopAppBar(
-                title = { Text("Create Employee", color = Color.White) }
+                title = { Text("Create Employee")
+                }
             )
+
         },
         content = { padding ->
             Column(
@@ -122,11 +125,11 @@ fun CreateEmployeeScreen(navController: NavController, viewModel: EmployeeViewMo
                             showDialog = true
                         }
                     },
-                    colors = ButtonDefaults.buttonColors(Color.White),
+                    colors = ButtonDefaults.buttonColors(Color.Black),
                     modifier = Modifier.fillMaxWidth().
-                    background(color = Color.White, shape = ShapeDefaults.Medium)
+                    background(color = Color.Black ,shape = ShapeDefaults.Medium)
                 ) {
-                    Text("Create Employee", style = MaterialTheme.typography.titleMedium, color = Color.Black)
+                    Text("Create Employee", style = MaterialTheme.typography.titleMedium, color = Color.White)
                 }
             }
         }

@@ -60,7 +60,7 @@ fun UpdateDeleteEmployeeScreen(
                         Text("Cancel")
                     }
                 },
-                title = { Text("Delete Employee", color = Color.White) },
+                title = { Text("Delete Employee") },
                 text = { Text("Are you sure you want to delete this employee?") }
             )
         }
@@ -74,7 +74,7 @@ fun UpdateDeleteEmployeeScreen(
                         Text("OK")
                     }
                 },
-                title = { Text("Incomplete Information", color = Color.White) },
+                title = { Text("Incomplete Information") },
                 text = { Text("Please fill all fields to update the employee.") }
             )
         }
@@ -95,7 +95,7 @@ fun UpdateDeleteEmployeeScreen(
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Update/Delete Employee", color = Color.White) }
+                    title = { Text("Update/Delete Employee") }
                 )
             }
         ) { padding ->
@@ -181,27 +181,29 @@ fun UpdateDeleteEmployeeScreen(
                                 showIncompleteDialog = true
                             }
                         },
-                        colors = ButtonDefaults.buttonColors(Color.White),
+                        colors = ButtonDefaults.buttonColors(Color.Black),
                         modifier = Modifier
                             .weight(1f)
-                            .background(color = Color.White, shape = ShapeDefaults.Large)
+                            .background(color = Color.Black, shape = ShapeDefaults.Large)
                     ) {
-                        Text("Update Employee", style = MaterialTheme.typography.titleMedium, color = Color.Black)
+                        Text("Update Employee", style = MaterialTheme.typography.titleMedium, color = Color.White)
                     }
 
                     Button(
                         onClick = {
                             showDeleteDialog = true
                         },
-                        colors = ButtonDefaults.buttonColors(Color.White),
+
+                        colors = ButtonDefaults.buttonColors(Color.Black),
                         modifier = Modifier
                             .weight(1f)
-                            .background(color = Color.White, shape = ShapeDefaults.Large)
+                            .background(color = Color.Black, shape = ShapeDefaults.Large)
+
                     ) {
                         Text(
                             "Delete Employee",
                             style = MaterialTheme.typography.titleMedium,
-                            color = Color.Black
+                            color = Color.White
                         )
                     }
                 }
